@@ -1,0 +1,59 @@
+.global-notes {
+  font-size: 14px;
+  color: red;
+  font-style: italic;
+}
+
+.x-checkbox .el-checkbox__inner::after {
+  box-sizing: content-box;
+  content: '\2715';
+  color: #dcdfe6;
+  position: absolute;
+  top: -4px;
+  left: 0.8px;
+}
+
+#org-tree-wrap .is-penultimate {
+  color: #409eff;
+}
+
+#org-tree-wrap .is-penultimate > .el-tree-node__content .el-tree-node__label {
+  border: 1px solid #409eff;
+  padding: 0 4px;
+}
+
+/* @import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */
