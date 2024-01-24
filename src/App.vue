@@ -32,6 +32,25 @@ const routeName = computed(() => route.name)
               <span>用户管理</span>
             </el-menu-item>
           </el-menu>
+
+          <el-divider />
+
+          <el-menu :default-active="routeName" router>
+            <el-menu-item index="policies" :route="{ name: 'policies' }">
+              <span>策略</span>
+            </el-menu-item>
+            <el-menu-item index="policy-templates" :route="{ name: 'policy-templates' }">
+              <span>策略模板</span>
+            </el-menu-item>
+          </el-menu>
+
+          <el-divider />
+
+          <el-menu :default-active="routeName" router>
+            <el-menu-item index="schema" :route="{ name: 'schema' }">
+              <span>架构</span>
+            </el-menu-item>
+          </el-menu>
         </el-aside>
         <el-main>
           <RouterView />
@@ -40,6 +59,15 @@ const routeName = computed(() => route.name)
     </el-container>
   </div>
 </template>
+
+<style>
+.el-aside {
+  border-right: 1px solid var(--el-menu-border-color);
+}
+.el-menu {
+  border-right: unset;
+}
+</style>
 
 <style scoped>
 /* header {
