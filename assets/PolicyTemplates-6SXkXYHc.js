@@ -1,0 +1,1 @@
+import{ai as r,__tla as l}from"./index-Es2zl-fp.js";let t,n=Promise.all([(()=>{try{return l}catch{}})()]).then(async()=>{const a={};function e(o,c){return"policy templates"}t=r(a,[["render",e]])});export{n as __tla,t as default};
